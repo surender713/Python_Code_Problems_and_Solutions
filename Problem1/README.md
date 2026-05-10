@@ -37,6 +37,7 @@ Try every possible pair of elements
 Checks if their sum equals target
 Simple but inefficient
 
+Complexity
 Time: O(n²)
 Space: O(1)
 
@@ -55,7 +56,7 @@ For each number x, compute target - x (complement)
 If complement already exists → pair found instantly
 Avoids re-checking previous elements
 
-
+Complexity
 Time: O(n)
 Space: O(n)
 
