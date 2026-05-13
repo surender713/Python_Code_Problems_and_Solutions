@@ -25,16 +25,16 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 -231 <= x <= 231 - 1
 
+### Solutions
 
 
+## Approach 1: Full Reversal
 
-### Approach 1: Full Reversal
-
-## Idea
+# Idea
 
 Reverse the entire number and compare it with the original number.
 
-## Code
+# Code
 
 ```python
 def isPalindrome(number):
@@ -52,25 +52,25 @@ def isPalindrome(number):
     return reversed_number == original_number
 ```
 
-### Complexity
+# Complexity
 
 * Time Complexity: O(n)
 * Space Complexity: O(1)
 
 
 
-### Approach 2: Half Reversal (Optimized)
+## Approach 2: Half Reversal (Optimized)
 
-## Idea
+# Idea
 
 Instead of reversing the whole number, reverse only half of it and compare both halves.
 
-## Key Observations
+# Key Observations
 
 * Negative numbers are not palindromes
 * Numbers ending in 0 (but not 0 itself) are not palindromes
 
-## Code
+# Code
 
 ```python
 def isPalindrome(number):
@@ -87,7 +87,7 @@ def isPalindrome(number):
     return number == reversed_half or number == reversed_half // 10
 ```
 
-### Complexity
+# Complexity
 
 * Time Complexity: O(n)
 * Space Complexity: O(1)
