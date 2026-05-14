@@ -1,3 +1,5 @@
+# Adjacent Check Approach
+
 def isGood(nums):
     
     max_num = max(nums)
@@ -16,6 +18,7 @@ def isGood(nums):
     else:
         return False
     
+# Counting-Based Approach
     
 def isGood(nums):
         
