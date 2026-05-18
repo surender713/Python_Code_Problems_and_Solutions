@@ -83,3 +83,44 @@ Constraints:
 
 0 <= s.length <= 200
 s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
+
+#################################################################
+
+xplanation:
+
+Step 1: "1337c0d3" (no characters read because there is no leading whitespace)
+         ^
+Step 2: "1337c0d3" (no characters read because there is neither a '-' nor '+')
+         ^
+Step 3: "1337c0d3" ("1337" is read in; reading stops because the next character is a non-digit)
+             ^
+Example 4:
+
+Input: s = "0-1"
+
+Output: 0
+
+Explanation:
+
+Step 1: "0-1" (no characters read because there is no leading whitespace)
+         ^
+Step 2: "0-1" (no characters read because there is neither a '-' nor '+')
+         ^
+Step 3: "0-1" ("0" is read in; reading stops because the next character is a non-digit)
+          ^
+Example 5:
+
+Input: s = "words and 987"
+
+Output: 0
+
+Explanation:
+
+Reading stops at the first non-digit character 'w'.
+
+ 
+
+Constraints:
+
+0 <= s.length <= 200
+s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
